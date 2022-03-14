@@ -1,0 +1,27 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "order_date": "2022-10-02",
+    "mark": "Renault",
+    "time": 2,
+    "quantity": 1
+}
+
+###
+DELETE http://localhost:9000/api/2  HTTP/1.1
+
+###
+PUT http://localhost:9000/api/1  HTTP/1.1
+Content-Type: application/json
+
+{
+    "order_date": "2022-02-03",
+    "mark": "Chevorlet",
+    "time": 4,
+    "quantity": 2
+}
